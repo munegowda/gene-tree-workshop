@@ -2,9 +2,9 @@ tasks:
     - name: download software/binaries
       init:
           # create directory "software" to download all your software
-          mkdir -p software
+          mkdir -p /workspace/software
           # enter into "software directory"
-          cd software
+          cd /workspace/software
           # download muscle
           wget https://github.com/rcedgar/muscle/releases/download/5.1.0/muscle5.1.linux_intel64
           # rename downloaded binary
