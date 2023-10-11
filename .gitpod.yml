@@ -6,6 +6,7 @@ tasks:
         # enter into "bin directory"
         cd /workspace/bin
         
+        ################### MUSCLE
         # download muscle
         wget https://github.com/rcedgar/muscle/releases/download/5.1.0/muscle5.1.linux_intel64
         # rename downloaded binary
@@ -15,6 +16,7 @@ tasks:
         # check if it works
         ./muscle
 
+        ################## FastTree
         # download FastTree
         wget http://www.microbesonline.org/fasttree/FastTree
         # make the binary executable
