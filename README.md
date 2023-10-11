@@ -1,2 +1,2 @@
 # gene-tree-workshop
-Hands-on workshop for building gene trees
+Hands-On workshop for building gene trees
