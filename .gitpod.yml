@@ -16,7 +16,7 @@ tasks:
         # check if it works
         ./muscle
 
-        ################## FastTree
+        ################### FastTree
         # download FastTree
         wget http://www.microbesonline.org/fasttree/FastTree
         # make the binary executable
