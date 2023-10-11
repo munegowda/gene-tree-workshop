@@ -13,6 +13,9 @@ tasks:
         chmod u+x muscle
         # check if it works
         ./muscle
+    - name: source bash configurations
+      command: |
+        # source /workspace/gene-tree-workshop/.bash-workshop
     - name: clear terminal
       command: |
         clear
