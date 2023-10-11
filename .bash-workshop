@@ -12,3 +12,6 @@ alias g='egrep --color'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+############## shell
+export PATH=${PATH}:/workspace/bin
