@@ -15,7 +15,7 @@ tasks:
         ./muscle
     - name: source bash configurations
       command: |
-        # source /workspace/gene-tree-workshop/.bash-workshop
+        source /workspace/gene-tree-workshop/.bash-workshop
     - name: clear terminal
       command: |
         clear
