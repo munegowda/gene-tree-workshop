@@ -1,3 +1,16 @@
+tasks:
+    - name: download software/binaries
+      init:
+          mkdir -p software
+          cd software
+          wget https://github.com/rcedgar/muscle/releases/download/5.1.0/muscle5.1.linux_intel64
+          mv muscle5.1.linux_intel64 muscle
+          chmod u+x muscle
+          muscle --version
+    - name: clear terminal
+      command: |
+        clear
+
 vscode:
     extensions:
     # enable pdf files for viewing in VS Code
@@ -19,3 +32,5 @@ github:
         addComment: false
         # add a "Review in Gitpod" button to pull requests (defaults to false)
         addBadge: true
+
+workspaceLocation: "/workspace"
