@@ -5,7 +5,6 @@ tasks:
           mkdir -p software
           # enter into "software directory"
           cd software
-          
           # download muscle
           wget https://github.com/rcedgar/muscle/releases/download/5.1.0/muscle5.1.linux_intel64
           # rename downloaded binary
