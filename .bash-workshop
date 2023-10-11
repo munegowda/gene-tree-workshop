@@ -1,0 +1,14 @@
+############# aliases
+alias lh='ls -lah --color=auto'
+alias ..="cd .."
+alias ...="cd ../.."
+alias md='mkdir -p'
+alias h='head -n 20'
+alias hh='head -n 5'
+alias t='tail -n 20'
+alias tt='tail -n 5'
+alias g='egrep --color'
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
