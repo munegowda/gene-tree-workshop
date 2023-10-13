@@ -34,6 +34,13 @@ tasks:
         # check if it works
         ./clustalo --version
 
+        ################### MrBayes
+        # install brew
+        NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        # install MrBayes
+        brew reinstall -s mrbayes
+        brew reinstall -s beagle
+
     - name: clear terminal
       command: |
         clear
