@@ -15,6 +15,7 @@ tasks:
         chmod u+x muscle
         # check if it works
         ./muscle
+        cd /workspace/bin
 
         ################### FastTree
         # download FastTree
@@ -23,6 +24,7 @@ tasks:
         chmod u+x FastTree
         # check if it works
         ./FastTree
+        cd /workspace/bin
 
         ################### Clustal Omega
         # download Clustal Omega
@@ -33,19 +35,23 @@ tasks:
         chmod u+x clustalo
         # check if it works
         ./clustalo --version
+        cd /workspace/bin
 
         ################### MrBayes
+        mkdir -p /workspace/software
+        cd /workspace/software
         wget https://github.com/NBISweden/MrBayes/releases/download/v3.2.7/mrbayes-3.2.7.tar.gz
         tar -xzf mrbayes-3.2.7.tar.gz
         cd mrbayes-3.2.7
-        ./configure
+        mkdir -p /workspace/local
+        ./configure --prefix=/workspace/local --bindir=/workspace/bin
         make
         make install        
         cd /workspace/bin
 
-    - name: clear terminal
-      command: |
+        ################## clean-up
         clear
+        cd /workspace
 
 vscode:
     extensions:
