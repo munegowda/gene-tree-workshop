@@ -24,6 +24,9 @@ tasks:
         # check if it works
         ./FastTree
 
+        ################### source bash configurations
+        source /workspace/gene-tree-workshop/.bash-workshop
+
     - name: clear terminal
       command: |
         clear
