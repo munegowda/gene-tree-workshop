@@ -24,6 +24,16 @@ tasks:
         # check if it works
         ./FastTree
 
+        ################### Clustal Omega
+        # download Clustal Omega
+        wget http://www.clustal.org/omega/clustalo-1.2.4-Ubuntu-x86_64
+        # rename downloaded binary
+        mv clustalo-1.2.4-Ubuntu-x86_64 clustalo
+        # make the binary executable
+        chmod u+x clustalo
+        # check if it works
+        ./clustalo --version
+
     - name: clear terminal
       command: |
         clear
